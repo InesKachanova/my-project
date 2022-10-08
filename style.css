@@ -1,8 +1,23 @@
 /* font-family: 'Lobster', cursive; */
 /* font-family: 'Roboto Slab', serif; */
 /* font-family: 'Source Sans Pro', sans-serif; */
-
+:root {
+  --main-font-family: ;
+  --secondary-font-family: ;
+}
 h1 {
   font-family: "Roboto Slab", serif;
-  background-color: rgb(173, 216, 245);
+  font-size: 56px;
+}
+
+.header {
+  text-align: center;
+  background-color: azure;
+  padding: 170px 30px;
+}
+
+.header p {
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 5px;
+  font-size: 20px;
 }
