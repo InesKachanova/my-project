@@ -4,6 +4,7 @@
 :root {
   --main-font-family: ;
   --secondary-font-family: ;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 h1 {
   font-family: "Roboto Slab", serif;
@@ -13,11 +14,54 @@ h1 {
 .header {
   text-align: center;
   background-color: azure;
-  padding: 170px 30px;
+  padding: 170px 30px 150px 30px;
+}
+p h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 45px;
+  font-size: 20px;
 }
 
-.header p {
-  font-family: "Source Sans Pro", sans-serif;
-  padding-top: 5px;
-  font-size: 20px;
+.image {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.morePhotos {
+  border: 1.5px solid rgb(6, 78, 54);
+  font-family: "Roboto Slab", serif;
+  color: rgb(6, 78, 54);
+  padding: 13px 20px;
+}
+.morePhotos:hover {
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding: 160px 15px 100px 15px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .row p {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+  h3 {
+    padding-top: 20px;
+  }
+  .image {
+    display: none;
+  }
+  .description {
+    text-align: center;
+  }
+  .morePhotos {
+    text-align: center;
+  }
 }
