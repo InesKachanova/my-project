@@ -11,6 +11,9 @@ h1 {
   font-size: 56px;
 }
 
+p {
+  font-size: 20px;
+}
 .header {
   text-align: center;
   background-color: azure;
@@ -37,18 +40,24 @@ p h3 {
   color: black;
 }
 
+.aboutInformation {
+  padding: 150px 30px;
+}
+.aboutInformation img {
+  width: 100%;
+}
+.aboutInformation h1 {
+  font-size: 48px;
+}
+
 @media (max-width: 1000px) {
   .header {
     padding: 160px 15px 100px 15px;
   }
-  h1 {
-    font-size: 60px;
-  }
+
   .row p {
     padding-top: 0px;
   }
-}
-@media (max-width: 768px) {
   h1 {
     font-size: 45px;
   }
