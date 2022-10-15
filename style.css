@@ -17,7 +17,7 @@ p {
 .header {
   text-align: center;
   background-color: azure;
-  padding: 170px 30px 150px 30px;
+  padding: 160px 30px 100px 30px;
 }
 p h3 {
   font-family: "Source Sans Pro", sans-serif;
@@ -49,10 +49,13 @@ p h3 {
 .aboutInformation h1 {
   font-size: 48px;
 }
+.GalleryImgName {
+  text-align: center;
+}
 
 @media (max-width: 1000px) {
   .header {
-    padding: 160px 15px 100px 15px;
+    padding: 140px 15px 75px 15px;
   }
 
   .row p {
@@ -64,7 +67,14 @@ p h3 {
   h3 {
     padding-top: 20px;
   }
-  .image {
+  .GalleryImgName h3 {
+    padding: 0;
+    margin: 0;
+  }
+  .GallerySecondImg {
+    margin-top: 35px;
+  }
+  .homepageImage {
     display: none;
   }
   .description {
