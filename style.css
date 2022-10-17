@@ -2,8 +2,8 @@
 /* font-family: 'Roboto Slab', serif; */
 /* font-family: 'Source Sans Pro', sans-serif; */
 :root {
-  --main-font-family: ;
-  --secondary-font-family: ;
+  --main-color: rgb(6, 78, 54);
+  --secondary-color: rgb(31, 118, 158);
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 h1 {
@@ -31,13 +31,13 @@ p h3 {
 }
 
 .morePhotos {
-  border: 1.5px solid rgb(6, 78, 54);
+  border: 1.5px solid var(--main-color);
   font-family: "Roboto Slab", serif;
-  color: rgb(6, 78, 54);
+  color: var(--main-color);
   padding: 13px 20px;
 }
 .morePhotos:hover {
-  color: rgb(31, 118, 158);
+  color: var(--secondary-color);
 }
 
 .aboutInformation {
@@ -48,6 +48,9 @@ p h3 {
 }
 .aboutInformation h1 {
   font-size: 48px;
+}
+.aboutInformation p {
+  font-size: 18px;
 }
 .GalleryImgName {
   text-align: center;
@@ -66,15 +69,19 @@ footer .contact-box {
 .socialLincs a {
   font-size: 22px;
   padding: 10px;
-  color: rgb(6, 78, 54);
+  color: var(--main-colorss);
 }
 
 .email:hover {
-  color: rgb(31, 118, 158);
+  color: var(--secondary-color);
 }
 
 .socialLincs a:hover {
-  color: rgb(31, 118, 158);
+  color: var(--secondary-color);
+}
+
+#githubLink {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
