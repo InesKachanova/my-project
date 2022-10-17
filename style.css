@@ -26,7 +26,7 @@ p h3 {
 }
 
 .image {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
   border-radius: 5px;
 }
 
@@ -37,7 +37,7 @@ p h3 {
   padding: 13px 20px;
 }
 .morePhotos:hover {
-  color: black;
+  color: rgb(31, 118, 158);
 }
 
 .aboutInformation {
@@ -52,8 +52,32 @@ p h3 {
 .GalleryImgName {
   text-align: center;
 }
+footer .contact-box {
+  background-color: azure;
+  margin: 20px 50px;
+  padding: 30px 90px;
+}
 
-@media (max-width: 1000px) {
+.email {
+  color: black;
+  font-size: 24px;
+}
+
+.socialLincs a {
+  font-size: 22px;
+  padding: 10px;
+  color: rgb(6, 78, 54);
+}
+
+.email:hover {
+  color: rgb(31, 118, 158);
+}
+
+.socialLincs a:hover {
+  color: rgb(31, 118, 158);
+}
+
+@media (max-width: 768px) {
   .header {
     padding: 140px 15px 75px 15px;
   }
@@ -74,13 +98,13 @@ p h3 {
   .GallerySecondImg {
     margin-top: 35px;
   }
-  .homepageImage {
-    display: none;
-  }
   .description {
     text-align: center;
   }
   .morePhotos {
     text-align: center;
+  }
+  footer .contact-box {
+    padding: 30px;
   }
 }
